@@ -74,7 +74,7 @@
 
     });
 
-/*
+
         //Enter the game server code. The game server handles
         //client connections looking for a game, creating games,
         //leaving games, joining games and ending games when they leave.
@@ -130,4 +130,3 @@
         }); //client.on disconnect
      
     }); //sio.sockets.on connection
-*/
