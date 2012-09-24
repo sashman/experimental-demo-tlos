@@ -13,7 +13,7 @@ function loadGame() {
 
 
 		//Create our game client instance.
-		game = new game_core();
+		//game = new game_core();
 
 		/*
 			//Fetch the viewport
@@ -169,7 +169,13 @@ function go() {
 			}
 		});
 
-		AkihabaraGamebox.addObject(new Player());
+		var player = new Player();
+		AkihabaraGamebox.addObject();
+
+		//NET CODE
+		//Create our game client instance.
+		game = new game_core();
+
 	};
 
 	// Add a bonus item. It jumps a while and then disappear.

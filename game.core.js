@@ -129,7 +129,7 @@ if('undefined' != typeof(global)) frame_time = 45; //on server we run at 45ms, 2
         if(!this.server) {
             
                 //Create a keyboard handler
-            this.keyboard = new THREEx.KeyboardState();
+            //this.keyboard = new THREEx.KeyboardState();
 
                 //Create the default configuration settings
             this.client_create_configuration();
