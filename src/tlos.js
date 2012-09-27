@@ -170,11 +170,12 @@ function go() {
 		});
 
 		var player = new Player();
+
 		AkihabaraGamebox.addObject(player);
 
 		//NET CODE
 		//Create our game client instance.
-		game = new game_core();
+		game = new game_core(player);
 
 	};
 

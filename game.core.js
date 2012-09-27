@@ -51,7 +51,7 @@ if('undefined' != typeof(global)) frame_time = 45; //on server we run at 45ms, 2
 
 /* The game_core class */
 
-    var game_core = function(game_instance){
+    var game_core = function(player, game_instance){
 
             //Store the instance, if any
         this.instance = game_instance;
@@ -66,10 +66,15 @@ if('undefined' != typeof(global)) frame_time = 45; //on server we run at 45ms, 2
 
             //We create a player set, passing them
             //the game that is running them, as well
+
+        
         if(this.server) {
 
             this.players = {
-                self : new game_player(this,this.instance.player_host),
+                //self : new game_player(this,this.instance.player_host),
+                //other : new game_player(this,this.instance.player_client)
+
+                self : player,
                 other : new game_player(this,this.instance.player_client)
             };
 
