@@ -54,7 +54,8 @@ if('undefined' != typeof(global)) frame_time = 45; //on server we run at 45ms, 2
     var game_core = function(player, game_instance){
 
             //Store the instance, if any
-        this.instance = game_instance;
+        if(game_instance)
+            this.instance = game_instance;
             //Store a flag if we are the server
         this.server = this.instance !== undefined;
 

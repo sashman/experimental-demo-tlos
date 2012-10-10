@@ -175,7 +175,7 @@ function go() {
 
 		//NET CODE
 		//Create our game client instance.
-		game = new game_core(player);
+		game = new game_core(player, null);
 
 	};
 
